@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <title>Impact of Taxation on Indian Economy</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/semantic.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css')}}">
+    <link href="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.1.min.css" rel="stylesheet">
+
+    <style>
+        html, body {
+            background-image: url('static/img/bg.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body class="bg-transparent">
+    {% include 'components/navbar.html' %}
+    {% block content %} {% endblock content %}
+    <nav class="navbar bg-primary">
+        <div class="container-fluid d-flex justify-content-center">
+            <a class="text-white h5" href="#">&copy; 2021</a>
+        </div>
+    </nav>
+
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.1.min.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/semantic.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/all.min.js')}}"></script>
+</body>
+
+</html>
